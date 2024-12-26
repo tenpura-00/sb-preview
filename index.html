@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スプラッシュバナー画像チェッカー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>スプラッシュバナー　プレビューツール</h1>
+        <p class="description">
+            表示イメージがご確認いただけるツールです<br>制作した画像をアップロードし表示イメージをご確認ください
+        </p>
+    </header>
+    <div class="container">
+        <div class="upload-section">
+            <p class="instruction">
+                横800×縦2000(px)の画像を<br>アップロードしてください
+            </p>
+            <div class="upload-zone" id="uploadZone">
+                <div class="upload-content">
+                    <label class="upload-button">
+                        ファイルを選択
+                        <input type="file" id="fileInput" accept="image/*" />
+                    </label>
+                    <p class="combined-instruction">
+                        または<br>ここにファイルをドロップしてください
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="preview">
+            <h3 class="preview-title">【表示イメージ】</h3>
+            <div class="phone-frame">
+                <img id="croppedImage" alt="Cropped Image" />
+            </div>
+            <p class="note">
+                <span class="note-highlight">※上記プレビューはイメージです</span><br>
+                <span class="note-small">端末により見える範囲が前後しますが表示イメージ内で<br>収まっている訴求内容は多くの端末で表示されます</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
